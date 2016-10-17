@@ -1,0 +1,440 @@
+@charset "utf-8";
+/*dialog*/
+#dialog-wraper{
+	position: fixed;
+	width: 100%;
+	top:0;
+	left:0;
+	z-index: 8888;
+	font-size: 14px;
+	font-family: 微软雅黑;
+}
+.dialog-layer{
+	height: 100%;
+	width: 100%;
+	background:#737373;
+	opacity: .5;
+	filter:alpha(opacity=55);
+}
+.dialog-main{
+	position: fixed;
+	background-color: #fff;
+	z-index: 9999;
+	top:50%;
+	left: 50%;
+}
+#dialog-wraper .dialog-main{
+	position: fixed;
+	background-color: #fff;
+	z-index: 9999;
+	top:50%;
+	left: 50%;
+	color:#333;
+}
+#dialog-wraper .dialog-content .notify-content{
+	padding:40px 0;
+	text-align: center;
+	font-size: 16px;
+}
+/*对话框头开始*/
+#dialog-wraper .dialog-header{
+	position: relative;
+	height: 42px;
+	line-height: 42px;
+	text-align: left;
+	background: #b10101;
+	color: white;
+	text-indent: 1em;
+}
+#dialog-wraper .dialog-close{
+	display: block;
+	position: absolute;
+	width: 11px;
+	height: 11px;
+	top:50%;
+	margin-top: -5px;
+	right: 8px;
+	background: url('images/dialog-close-icon.png') no-repeat;
+	cursor: pointer;
+}
+/*对话框头结束*/
+
+#dialog-wraper .dialog-content .btn-pic{
+	display: block;
+	padding: 4px 16px;
+	*padding: 2px 8px;
+	color: #0077d3;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	cursor: pointer;
+	font-size: 14px;
+	background: transparent;
+}
+
+/*对话框主体*/
+
+/*焦点图开始*/
+#dialog-wraper .dialog-content h4{
+	font-weight: normal;
+	padding: 20px 0 10px 14px;
+}
+#dialog-wraper .dialog-content .focus-container{
+	position: relative;
+}
+
+#dialog-wraper  .focus-pic{
+	display: block;
+	width: 460px;
+	height: 121px;
+	margin: auto;
+}
+
+#dialog-wraper .focus-summary{
+	display: block;
+	position: relative;
+	font-size: 12px;
+	color: #b10101;
+	padding: 10px 20px;
+}
+#dialog-wraper .focus-container .btn-upload{
+	display: none;
+}
+/*删除默认隐藏*/
+#dialog-wraper .focus-summary .delete-focus{
+	position: absolute;
+	top:5px;
+	right: 18px;
+	display: block;
+}
+#dialog-wraper .focus-summary .delete-focus.false{
+	display: none;
+}
+
+/*焦点图结束*/
+
+/*编辑多个商品开始*/
+/*里面的内容还用原来的，就是把不该显示的隐藏掉。*/
+#dialog-wraper .dialog-content .multi-goods-box{
+	max-height: 600px;
+	overflow-y:auto;
+}
+#dialog-wraper .multi-goods-box .goods-item{
+	width: 128px;
+	height: 168px;
+	margin-right: 6px;
+	margin-bottom: 6px;
+}
+#dialog-wraper .multi-goods-box .goods-summary{
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#dialog-wraper .multi-goods-box .goods-extre .timer{
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#dialog-wraper .multi-goods-box .goods-btns{
+	display: none;
+}
+#dialog-wraper .multi-goods-box .upload-pic{
+	width: 128px;
+	height: 168px;
+}
+#dialog-wraper .multi-goods-box .goods-price{
+	display: none;
+}
+#dialog-wraper .multi-goods-box .good-item .goods-summary{
+	text-align: left;
+}
+#dialog-wraper .multi-goods-box .goods-pic{
+	width: 80px;
+	height: 100px;
+}
+
+#dialog-wraper .multi-goods-box th{
+	padding: 6px 0;
+}
+#dialog-wraper .multi-goods-box .col1{
+	width: 70px;
+	text-align: center;
+	border-right:1px solid  #e6e6e6;
+	vertical-align:top;
+}
+#dialog-wraper .multi-goods-box th.col2{
+	text-align: left;
+}
+#dialog-wraper .multi-goods-box .col2{
+	padding-left: 10px;
+	text-align: center;
+}
+#dialog-wraper .multi-goods-box .btn-add-group{
+	display: block;
+	width: 166px;
+	height: 40px;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 12px;
+	line-height: 40px;
+	text-align: center;
+	text-indent: 1em;
+	color: #0077d3;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	font-size: 18px;
+	background: url('images/btn-add-group-icon.png') no-repeat 36px center;
+}
+#dialog-wraper .multi-goods-box .add-summary{
+	margin-bottom: 10px;
+	color: #999;
+}
+/*编辑多个商品结束*/
+
+/*编辑单个商品*/
+#dialog-wraper .form-horizontal{
+	padding: 10px 0;
+	zoom:1;
+}
+#dialog-wraper .form-horizontal:after{
+	content:""; 
+	display:block; 
+	height:0; 
+	clear:both; 
+}
+#dialog-wraper h3{
+	font-weight: normal;
+	font-size: 14px;
+	margin-left: 18px;
+}
+#dialog-wraper .goods-container{
+	margin: 18px;
+	height: 484px;
+}
+
+#dialog-wraper .goods-container .input-gourp-1,#dialog-wraper .goods-container .input-gourp-2{
+	float: left;
+}
+#dialog-wraper .goods-container .input-gourp-1{
+	margin-right: 70px;
+}
+#dialog-wraper .form-horizontal .label{
+	height: 32px;
+	line-height: 32px;
+	width: 100px;
+	text-align: right;
+	float:left;
+}
+#dialog-wraper .form-horizontal .large-label{
+	width: 120px;
+}
+#dialog-wraper .form-horizontal .input{
+	position: relative;
+	float:left;
+	line-height: 32px;
+}
+#dialog-wraper .form-horizontal .search-goods{
+	display: block;
+	position: absolute;
+	top:2px;
+	right: -65px;
+	width: 60px;
+	height: 30px;
+	border-radius: 2px;
+	line-height: 30px;
+	text-align: center;
+	background: #b10101;
+	color: #fff;
+}
+.form-horizontal input[type="text"]{
+	border: 1px solid #ccc;
+	height: 32px;
+	line-height: 32px;
+	width: 290px;
+	margin: 0 5px;
+	border-radius: 2px;
+}
+#dialog-wraper .form-horizontal select{
+	width: 130px;
+	height: 30px;
+	line-height: 30px;
+	+padding-bottom: 5px;
+}
+#dialog-wraper .form-horizontal .small-xx{
+	width: 250px;
+}
+#dialog-wraper .form-horizontal .small-x{
+	width: 80px;
+}
+#dialog-wraper .form-horizontal .goods-pic{
+	float: left;
+	width: 132px;
+	height: 132px;
+	border-radius: 2px;
+	margin-left: 5px;
+}
+#dialog-wraper .form-horizontal .change-goods-pic{
+	margin-bottom: 5px;
+}
+#dialog-wraper .form-horizontal .goods-pic-summary{
+	float: left;
+	position: relative;
+	color: #999;
+	margin-left: 5px;
+	margin-top: 62px;
+	font-size: 12px;
+	line-height: normal;
+}
+#dialog-wraper .form-horizontal .file-change-goods-pic{
+	position: absolute;
+	padding: 8px 12px;
+    width: 100px;
+    opacity: 0;
+    filter: alpha(opacity=0); 
+}
+#dialog-wraper .form-horizontal .btn-pic{
+	width: normal;
+}
+#dialog-wraper .form-horizontal .empty{
+	background: #e2e2e2;
+}
+#dialog-wraper .view-box{
+	border:1px solid #e2e2e2;
+	float: none;
+	margin: 30px auto 20px auto;
+}
+#dialog-wraper .view-box.empty{
+	background: #e2e2e2;
+}
+#dialog-wraper .btn-view{
+	clear: both;
+	margin: auto;
+}
+/*编辑单个商品*/
+
+/*编辑图片*/
+#dialog-wraper .single-pic-box{
+	position: relative;
+	margin-left: 14px;
+}
+#dialog-wraper .single-pic-box .single-pic{
+	width: 126px;
+	height: 170px;
+}
+#dialog-wraper .single-pic-box .upload-single-pic{
+	display: none;
+}
+#dialog-wraper .single-pic-box .single-pic-summary{
+	position: absolute;
+	right:40px;
+	bottom: 2px;
+	color: #999;
+	font-size: 12px;
+}
+#dialog-wraper .single-pic-box .delete-single-pic{
+	display: block;
+}
+#dialog-wraper .single-pic-box .delete-single-pic.false{
+	display: none;
+}
+/*优惠券*/
+#dialog-wraper .ticket-style-container{
+	margin: 30px 60px;
+}
+#dialog-wraper .ticket-style-container .style-items{
+	margin: 10px 0 38px 20px;
+}
+#dialog-wraper .ticket-style-container .style-item{
+	width: 83px;
+	height: 48px;
+	background: url(images/tecket-item-bg.png) no-repeat;
+	float: left;
+}
+#dialog-wraper  .ticket-container{
+	margin: 5px 10px;
+}
+#dialog-wraper  .ticket-container table{
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
+}
+#dialog-wraper  .ticket-container th{
+	height: 30px;
+	font-weight: normal;
+	background: #f0f0f0;
+}
+#dialog-wraper  .ticket-container td{
+	height: 30px;
+	border-bottom: 1px solid #dadada;
+}
+#dialog-wraper  .ticket-btns{
+	margin: 30px 0;
+}
+#dialog-wraper  .ticket-btns a{
+	display: block;
+	float: left;
+	text-align: center;
+}
+#dialog-wraper  .ticket-container .col1{
+	width: 20px;
+	text-align: left;
+}
+#dialog-wraper  .ticket-container .ticket-prev,#dialog-wraper  .ticket-container .ticket-next{	
+	width: 22px;
+	height: 22px;
+	margin-right: 10px;
+	line-height: 22px;
+	color:#999;
+	border:1px solid #ccc;
+}
+#dialog-wraper  .ticket-container .ticket-cancel,#dialog-wraper  .ticket-container .ticket-save{
+	float: right;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	background: #b10101;
+	border-radius: 3px;
+}
+#dialog-wraper  .ticket-container .ticket-save{
+	margin-left: 20px;
+}
+#dialog-wraper .ticket-link,#dialog-wraper .ticket-link a{
+	color: #b10101;
+}
+#dialog-wraper .ticket-link{
+	margin-top: 20px;
+}
+
+#dialog-wraper .publish-container{
+	margin: 10px;
+	font-size: 12px;
+}
+#dialog-wraper .publish-container .col1{
+	width: 100px;
+	text-align: right;
+	font-size: 14px;
+}
+#dialog-wraper .publish-container  td{
+	padding: 5px;
+}
+#dialog-wraper .publish-container input[type="text"]{
+	width: 284px;
+	height: 30px;
+	line-height: 30px;
+	border:1px solid #ccc;
+}
+/*对话框底部*/
+#dialog-wraper .dialog-footer{
+	clear:both;
+	padding: 20px 0 40px 0;
+	text-align: center;
+}
+#dialog-wraper .dialog-footer input{
+	width: 100px;
+	height: 32px;
+	margin-left: 40px;
+	line-height: 32px;
+	color: white;
+	background: #b10101;
+	border-radius: 3px;
+}

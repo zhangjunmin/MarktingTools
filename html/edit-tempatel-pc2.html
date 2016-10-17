@@ -1,0 +1,504 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> 编辑模板pc2</title>
+		<link rel="stylesheet" type="text/css" href="../resource/public/jquery.mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+		<link rel="stylesheet" type="text/css" href="../resource/public/spectrum/spectrum.css">
+		<link rel="stylesheet" type="text/css" href="../resource/public/dialog/dialog.css">
+		<link rel="stylesheet" type="text/css" href="../resource/styles/reset.css">
+		<link rel="stylesheet" type="text/css" href="../resource/styles/common.css">
+		<link rel="stylesheet" type="text/css" href="../resource/styles/index.css">
+	</head>
+	</head>
+	<body>
+		<div class="container">
+			<div class="mt-navs">
+				<div class="pub-center-box nav-container">
+					<div class="nav nav1">
+						<a href="#" class="cricle-box">1</a>
+						<p>选择专题模板</p>
+					</div>
+					<div class="nav nav2 current">
+						<a href="#" class="cricle-box">2</a>
+						<p>编辑专题</p>
+					</div>
+				</div>
+			</div>
+			<div class="mt-seminar-header">
+				<div class="pub-center-box seminar-header-inner">
+					<h3 class="">专题编辑区</h3>
+					<!--拾色器会对input类型的进行转化-->
+					<a href="#" id="pickColor" class="btn picker-color">背景编辑</a>
+				</div>
+			</div>
+			<div class="pub-center-box mt-seminar-body clearfix">
+				<div class="mt-asider">
+					<div class="tabs clearfix">
+						<a href="#" class="tab active">全国专题</a>
+						<a href="#" class="tab">本地专题</a>
+					</div>
+					<div class="pannel">
+						<h4>全国专题是针对全国各地区买家开放的专题活动，各地区买家看到的专题内容都是相同的</h4>
+						<p><strong>1</strong>、模板支持专题内容按买家地理位置不同区别显示的功能，即本地买家看到的专题内容和非本地买家看到的不一样（点击“本地专题”进入编辑本地专题页面）</p>
+						<p><strong>2</strong>、本地专题 非必填项，若没有本地营销的特殊需求可不点击</p>
+					</div>
+				</div>
+				<div class="mt-pc-contents">
+					<div class="tab-content show">
+						<div class="focus-items">
+							<div class="focus-item">
+								<div class="toolbar">
+									<input type="button" value="编辑" class="primary-btn btn-edit-focus">
+									<div class="tool-layer">
+	                                  <div class="tool-layer-font">焦点图区域</div>
+	                                  <div class="tool-layer-bg"></div>
+	                           		</div>
+								</div>
+								<img src="../resource/images/focus-empty.jpg" data-src="../resource/images/focus-empty.jpg" >
+							</div>
+							<div class="focus-item">
+								<div class="toolbar">
+									<input type="button" value="编辑" class="primary-btn btn-edit-focus">
+									<div class="tool-layer">
+	                                  <div class="tool-layer-font">焦点图区域</div>
+	                                  <div class="tool-layer-bg"></div>
+	                            	</div>
+								</div>
+								<img src="../resource/images/test-focus-demo.jpg" data-src="../resource/images/focus-empty.jpg">
+							</div>
+						</div>
+						<div class="ticket-items">
+							<div class="toolbar">
+									<input type="button" value="编辑" class="primary-btn btn-edit-tickets">
+	                                <div class="tool-layer-font">优惠卷区域</div>
+	                                <div class="tool-layer-bg"></div>
+	                        </div>
+	                        <div class="tickets-box clearfix">
+	                        	<div class="ticket-item">
+	                        		<div class="ticket-amount">500</div>
+	                        		<div class="ticket-layer"></div>
+	                        		<div class="ticket-edit-box">
+	                        			<input class="primary-btn ticket-delete" type="button" value="删除">
+	                        			<input class="primary-btn ticket-edit" type="button" value="编辑">
+	                        		</div>
+									<input class="primary-btn ticket-add" type="button" value="添加">
+	                        	</div>
+	                        	<div class="ticket-item empty">
+	                        		<div class="ticket-amount"></div>
+	                        		<div class="ticket-layer"></div>
+	                        		<div class="ticket-edit-box">
+	                        			<input class="primary-btn ticket-delete" type="button" value="删除">
+	                        			<input class="primary-btn ticket-edit" type="button" value="编辑">
+	                        		</div>
+									<input class="primary-btn ticket-add" type="button" value="添加">
+	                        	</div>
+	                        	<div class="ticket-item empty">
+	                        		<div class="ticket-amount"></div>
+	                        		<div class="ticket-layer"></div>
+	                        		<div class="ticket-edit-box">
+	                        			<input class="primary-btn ticket-delete" type="button" value="删除">
+	                        			<input class="primary-btn ticket-edit" type="button" value="编辑">
+	                        		</div>
+									<input class="primary-btn ticket-add" type="button" value="添加">
+	                        	</div>
+	                        	<div class="ticket-item empty">
+	                        		<div class="ticket-amount"></div>
+	                        		<div class="ticket-layer"></div>
+	                        		<div class="ticket-edit-box">
+	                        			<input class="primary-btn ticket-delete" type="button" value="删除">
+	                        			<input class="primary-btn ticket-edit" type="button" value="编辑">
+	                        		</div>
+									<input class="primary-btn ticket-add" type="button" value="添加">
+	                        	</div>
+	                        </div>
+						</div>
+						<div class="goods-contents">
+							<div class="goods-box">
+								<div class="goods-caption">
+									<div class="toolbar">
+										<input type="button" value="编辑" class="primary-btn btn-edit-caption">
+										<div class="tool-layer">
+		                                  <div class="tool-layer-font">通栏副标题（大图）</div>
+		                                  <div class="tool-layer-bg"></div>
+		                            	</div>
+									</div>
+									<img src="../resource/images/caption-empty.jpg" data-src="../resource/images/caption-empty.jpg">
+								</div>
+								<div class="goods-items">
+									<div class="toolbar">
+											<input type="button" value="编辑" class="primary-btn btn-edit-group">
+			                                <div class="tool-layer-font">商品内容区域</div>
+			                                <div class="tool-layer-bg"></div>
+			                        </div>
+									<div class="goods-group clearfix">
+										<!--共分3种，1是为空，2是设置的产品，3是设置的图片-->
+										<div class="goods-item">
+
+											<div class="goods-data">
+												<span class="sale-icon">直降
+													<i></i>
+												</span>
+												<img class="goods-pic" src="../resource/images/single-goods-demo1.jpg">
+												<div class="goods-infomation">
+													<p class="goods-summary">酷派 cool1（标准版/全网通）双1300万后置摄像素</p>
+													<div class="goods-side-title">更完善的售后，尽在。。</div>
+													<div class="goods-price">
+														<span>¥<strong>1988</strong></span>
+														<input type="button" class="btn-buy" value="立即购买">
+													</div>
+													<div class="goods-extre">
+														<span class="timer">还剩<i>XX</i>天<i>XX</i>时<i>XX</i>分<i>XX</i>秒</span>
+													</div>
+												</div>
+											</div>
+											<div class="goods-layer">
+
+											</div>
+											<div class="goods-btns">
+												<input class="btn-edit-single btn-edit-top" type="button" value="编辑">
+												<input class="btn-edit-single btn-edit-bottom" type="button" value="删除">
+											</div>
+										</div>
+										<div class="goods-item">
+											<div class="goods-data">
+												<img class="upload-pic" src="../resource/images/upload-single-pic-demo.jpg">
+											</div>
+											<div class="goods-layer">
+
+											</div>
+											<div class="goods-btns">
+												<input class="btn-edit-single btn-edit-top" type="button" value="编辑">
+												<input class="btn-edit-single btn-edit-bottom" type="button" value="删除">
+											</div>
+										</div>
+										<div class="goods-item empty">
+											<div class="goods-data">
+
+											</div>
+											<div class="goods-layer">
+
+											</div>
+											<div class="goods-btns">
+												<input class="btn-edit-single  btn-edit-top" type="button" value="设置商品">
+												<input class="btn-edit-single btn-edit-bottom" type="button" value="设置图片">
+											</div>
+										</div>
+										<div class="goods-item empty">
+											<div class="goods-data">
+
+											</div>
+											<div class="goods-layer">
+
+											</div>
+											<div class="goods-btns">
+												<input class="btn-edit-single  btn-edit-top" type="button" value="设置商品">
+												<input class="btn-edit-single btn-edit-bottom" type="button" value="设置图片">
+											</div>
+										</div>
+										<div class="goods-item">
+											<div class="goods-data">
+												<span class="sale-icon">优惠
+													<i></i>
+												</span>
+												<img class="goods-pic" src="../resource/images/single-goods-demo1.jpg">
+												<div class="goods-infomation">
+													<p class="goods-summary">酷派 cool1（标准版/全网通）双1300万后置摄像素</p>
+													<div class="goods-price">
+														<span>¥<strong>1988</strong></span>
+														<input type="button" class="btn-buy" value="立即购买">
+													</div>
+													<div class="goods-extre">
+														<span class="timer">还剩<i>XX</i>天<i>XX</i>时<i>XX</i>分<i>XX</i>秒</span>
+													</div>
+													<div class="hot">人气：100人</div>
+												</div>
+											</div>
+											<div class="goods-layer">
+
+											</div>
+											<div class="goods-btns">
+												<input class="btn-edit-single btn-edit-top" type="button" value="编辑">
+												<input class="btn-edit-single btn-edit-bottom" type="button" value="删除">
+											</div>
+										</div>
+										<div class="goods-item">
+											<div class="goods-data">
+												<img class="upload-pic" src="../resource/images/upload-single-pic-demo.jpg">
+											</div>
+											<div class="goods-layer">
+
+											</div>
+											<div class="goods-btns">
+												<input class="btn-edit-single btn-edit-top" type="button" value="编辑">
+												<input class="btn-edit-single btn-edit-bottom" type="button" value="删除">
+											</div>
+										</div>
+										<div class="goods-item empty">
+											<div class="goods-data">
+
+											</div>
+											<div class="goods-layer">
+
+											</div>
+											<div class="goods-btns">
+												<input class="btn-edit-single  btn-edit-top" type="button" value="设置商品">
+												<input class="btn-edit-single btn-edit-bottom" type="button" value="设置图片">
+											</div>
+										</div>
+										<div class="goods-item empty">
+											<div class="goods-data">
+
+											</div>
+											<div class="goods-layer">
+
+											</div>
+											<div class="goods-btns">
+												<input class="btn-edit-single  btn-edit-top" type="button" value="设置商品">
+												<input class="btn-edit-single btn-edit-bottom" type="button" value="设置图片">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a class="btn-add-goods-container" href="javascript:void(0);">点击添加编辑区域</a>
+						</div>
+					</div>
+					<div class="tab-content">
+						<div class="focus-items">
+							<div class="focus-item">
+								<div class="toolbar">
+									<input type="button" value="编辑" class="primary-btn btn-edit-focus">
+									<div class="tool-layer">
+	                                  <div class="tool-layer-font">焦点图区域</div>
+	                                  <div class="tool-layer-bg"></div>
+	                           		</div>
+								</div>
+								<img src="../resource/images/focus-empty.jpg" data-src="../resource/images/focus-empty.jpg" >
+							</div>
+							<div class="focus-item">
+								<div class="toolbar">
+									<input type="button" value="编辑" class="primary-btn btn-edit-focus">
+									<div class="tool-layer">
+	                                  <div class="tool-layer-font">焦点图区域</div>
+	                                  <div class="tool-layer-bg"></div>
+	                            	</div>
+								</div>
+								<img src="../resource/images/test-focus-demo.jpg" data-src="../resource/images/focus-empty.jpg">
+							</div>
+						</div>
+						<div class="ticket-items">
+							<div class="toolbar">
+									<input type="button" value="编辑" class="primary-btn btn-edit-tickets">
+	                                <div class="tool-layer-font">优惠卷区域</div>
+	                                <div class="tool-layer-bg"></div>
+	                        </div>
+	                        <div class="tickets-box clearfix">
+	                        	<div class="ticket-item">
+	                        		<div class="ticket-layer"></div>
+	                        		<div class="ticket-edit-box">
+	                        			<input class="primary-btn ticket-delete" type="button" value="删除">
+	                        			<input class="primary-btn ticket-edit" type="button" value="编辑">
+	                        		</div>
+									<input class="primary-btn ticket-add" type="button" value="添加">
+	                        	</div>
+	                        	<div class="ticket-item empty">
+	                        		<div class="ticket-layer"></div>
+	                        		<div class="ticket-edit-box">
+	                        			<input class="primary-btn ticket-delete" type="button" value="删除">
+	                        			<input class="primary-btn ticket-edit" type="button" value="编辑">
+	                        		</div>
+									<input class="primary-btn ticket-add" type="button" value="添加">
+	                        	</div>
+	                        	<div class="ticket-item empty">
+	                        		<div class="ticket-layer"></div>
+	                        		<div class="ticket-edit-box">
+	                        			<input class="primary-btn ticket-delete" type="button" value="删除">
+	                        			<input class="primary-btn ticket-edit" type="button" value="编辑">
+	                        		</div>
+									<input class="primary-btn ticket-add" type="button" value="添加">
+	                        	</div>
+	                        	<div class="ticket-item empty">
+	                        		<div class="ticket-layer"></div>
+	                        		<div class="ticket-edit-box">
+	                        			<input class="primary-btn ticket-delete" type="button" value="删除">
+	                        			<input class="primary-btn ticket-edit" type="button" value="编辑">
+	                        		</div>
+									<input class="primary-btn ticket-add" type="button" value="添加">
+	                        	</div>
+	                        </div>
+						</div>
+						<div class="goods-contents">
+							<div class="goods-box">
+								<div class="goods-caption">
+									<div class="toolbar">
+										<input type="button" value="编辑" class="primary-btn btn-edit-caption">
+										<div class="tool-layer">
+		                                  <div class="tool-layer-font">通栏副标题（大图）</div>
+		                                  <div class="tool-layer-bg"></div>
+		                            	</div>
+									</div>
+									<img src="../resource/images/caption-empty.jpg" data-src="../resource/images/caption-empty.jpg">
+								</div>
+								<div class="goods-items">
+									<div class="toolbar">
+											<input type="button" value="编辑" class="primary-btn btn-edit-group">
+			                                <div class="tool-layer-font">商品内容区域</div>
+			                                <div class="tool-layer-bg"></div>
+			                        </div>
+									<div class="goods-group clearfix">
+										<!--共分3种，1是为空，2是设置的产品，3是设置的图片-->
+										<div class="goods-item">
+
+											<div class="goods-data">
+												<span class="sale-icon">直降
+													<i></i>
+												</span>
+												<img class="goods-pic" src="../resource/images/single-goods-demo1.jpg">
+												<div class="goods-infomation">
+													<p class="goods-summary">酷派 cool1（标准版/全网通）双1300万后置摄像素</p>
+													<div class="goods-side-title">更完善的售后，尽在。。</div>
+													<div class="goods-price">
+														<span>¥<strong>1988</strong></span>
+														<input type="button" class="btn-buy" value="立即购买">
+													</div>
+													<div class="goods-extre">
+														<span class="timer">还剩<i>XX</i>天<i>XX</i>时<i>XX</i>分<i>XX</i>秒</span>
+													</div>
+												</div>
+											</div>
+											<div class="goods-layer">
+
+											</div>
+											<div class="goods-btns">
+												<input class="btn-edit-single btn-edit-top" type="button" value="编辑">
+												<input class="btn-edit-single btn-edit-bottom" type="button" value="删除">
+											</div>
+										</div>
+										<div class="goods-item">
+											<div class="goods-data">
+												<img class="upload-pic" src="../resource/images/upload-single-pic-demo.jpg">
+											</div>
+											<div class="goods-layer">
+
+											</div>
+											<div class="goods-btns">
+												<input class="btn-edit-single btn-edit-top" type="button" value="编辑">
+												<input class="btn-edit-single btn-edit-bottom" type="button" value="删除">
+											</div>
+										</div>
+										<div class="goods-item empty">
+											<div class="goods-data">
+
+											</div>
+											<div class="goods-layer">
+
+											</div>
+											<div class="goods-btns">
+												<input class="btn-edit-single  btn-edit-top" type="button" value="设置商品">
+												<input class="btn-edit-single btn-edit-bottom" type="button" value="设置图片">
+											</div>
+										</div>
+										<div class="goods-item empty">
+											<div class="goods-data">
+
+											</div>
+											<div class="goods-layer">
+
+											</div>
+											<div class="goods-btns">
+												<input class="btn-edit-single  btn-edit-top" type="button" value="设置商品">
+												<input class="btn-edit-single btn-edit-bottom" type="button" value="设置图片">
+											</div>
+										</div>
+										<div class="goods-item">
+											<div class="goods-data">
+												<span class="sale-icon">优惠
+													<i></i>
+												</span>
+												<img class="goods-pic" src="../resource/images/single-goods-demo1.jpg">
+												<div class="goods-infomation"
+													<p class="goods-summary">酷派 cool1（标准版/全网通）双1300万后置摄像素</p>
+													<div class="goods-price">
+														<span>¥<strong>1988</strong></span>
+														<input type="button" class="btn-buy" value="立即购买">
+													</div>
+													<div class="goods-extre">
+														<span class="timer">还剩<i>XX</i>天<i>XX</i>时<i>XX</i>分<i>XX</i>秒</span>
+													</div>
+													<div class="hot">人气：100人</div>
+												</div>
+											</div>
+											<div class="goods-layer">
+
+											</div>
+											<div class="goods-btns">
+												<input class="btn-edit-single btn-edit-top" type="button" value="编辑">
+												<input class="btn-edit-single btn-edit-bottom" type="button" value="删除">
+											</div>
+										</div>
+										<div class="goods-item">
+											<div class="goods-data">
+												<img class="upload-pic" src="../resource/images/upload-single-pic-demo.jpg">
+											</div>
+											<div class="goods-layer">
+
+											</div>
+											<div class="goods-btns">
+												<input class="btn-edit-single btn-edit-top" type="button" value="编辑">
+												<input class="btn-edit-single btn-edit-bottom" type="button" value="删除">
+											</div>
+										</div>
+										<div class="goods-item empty">
+											<div class="goods-data">
+
+											</div>
+											<div class="goods-layer">
+
+											</div>
+											<div class="goods-btns">
+												<input class="btn-edit-single  btn-edit-top" type="button" value="设置商品">
+												<input class="btn-edit-single btn-edit-bottom" type="button" value="设置图片">
+											</div>
+										</div>
+										<div class="goods-item empty">
+											<div class="goods-data">
+
+											</div>
+											<div class="goods-layer">
+
+											</div>
+											<div class="goods-btns">
+												<input class="btn-edit-single  btn-edit-top" type="button" value="设置商品">
+												<input class="btn-edit-single btn-edit-bottom" type="button" value="设置图片">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a class="btn-add-goods-container" href="javascript:void(0);">点击添加编辑区域</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mt-seminar-footer">
+				<div class="pub-center-box seminar-footer-inner">
+					<div class="edit-box">
+						<input class="btn-view" type="button" value="预览">
+						<input class="btn-save" type="button" value="保存">
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../resource/public/jquery.js"></script>
+		<script type="text/javascript" src="../resource/public/json2.js"></script>
+		<script type="text/javascript" src="../resource/public/jquery.zclip/jquery.zclip.js"></script>
+		<script type="text/javascript" src="../resource/public/ajaxfileupload.js"></script>
+		<script type="text/javascript" src="../resource/public/My97DatePicker/WdatePicker.js"></script>
+		<script type="text/javascript" src="../resource/public/jquery.mCustomScrollbar/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" src="../resource/public/jquery.mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+		<script type="text/javascript" src="../resource/public/dialog/mt-dialog.js"></script>
+		<script type="text/javascript" src="../resource/public/spectrum/spectrum.js"></script>
+		<script type="text/javascript" src="../resource/scripts/index.js"></script>
+	</body>
+</html>

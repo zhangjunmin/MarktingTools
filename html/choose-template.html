@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> 选择模板</title>
+		<link rel="stylesheet" type="text/css" href="../resource/public/jquery.mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+		<link rel="stylesheet" type="text/css" href="../resource/public/spectrum/spectrum.css">
+		<link rel="stylesheet" type="text/css" href="../resource/public/dialog/dialog.css">
+		<link rel="stylesheet" type="text/css" href="../resource/styles/reset.css">
+		<link rel="stylesheet" type="text/css" href="../resource/styles/common.css">
+		<link rel="stylesheet" type="text/css" href="../resource/styles/index.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="mt-seminar-index-container">
+				<div class="seminar-index-header clearfix">
+					<a href="choose-template.html" class="publish-seminar selected">发布新专题</a>
+					<a href="seminar-list.html" class="view-seminar">查看专题</a>
+				</div>
+				<div class="mt-seminar-input-box">
+					<div class="summary"><i>功能描述：</i>商家可自行编辑、发布专题活动</div>
+					<div class="mt-navs">
+						<div class="pub-center-box nav-container">
+							<div class="nav nav1 current">
+								<a href="#" class="cricle-box">1</a>
+								<p>选择专题模板</p>
+							</div>
+							<div class="nav nav2">
+								<a href="#" class="cricle-box">2</a>
+								<p>编辑专题</p>
+							</div>
+						</div>
+					</div>
+					<table class="mt-seminar-table">
+						<tbody>
+							<tr>
+								<td class="col1"><span class="required">* </span>活动名称：</td>
+								<td>
+									<input type="text" class="input-goods-name" placeholder="请输入商品副标题">
+								</td>
+							</tr>
+							<tr>
+								<td class="col1"><span class="required">* </span>设置专题时间：</td>
+								<td>
+									<input type="text" readonly="readonly" class="start-date input-picker-date" placeholder="活动生效时间">
+									<span>-</span>
+									<input type="text" readonly="readonly"  class="end-date input-picker-date" placeholder="活动过期时间">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="mt-template-list">
+					<table>
+						<tr>
+							<td class="col1"><span class="required">* </span>选择PC端专题模板</td>
+							<td style="display:none;">
+								<a class="template pc-template" data-id="模板1" href="javascript:void(0);">
+									<img src="../resource/images/template1.jpg">
+								</a>
+								<p class="template-name">模板1</p>
+							</td>
+							<td>
+								<a class="template pc-template" data-id="模板2" href="javascript:void(0);">
+									<img src="../resource/images/template2.png">
+								</a>
+								<p class="template-name">模板1</p>
+							</td>
+							<td style="display:none;"></td>
+						</tr>
+						<tr>
+							<td class="col1"><span class="required">* </span>选择移动专题模板</td>
+							<td style="display:none;">
+								<a class="template mobile-template" data-id="模板3" href="javascript:void(0);">
+									<img src="../resource/images/template3.jpg">
+								</a>
+								<p class="template-name">模板3</p>
+							</td>
+							<td>
+								<a class="template mobile-template" data-id="模板4" href="javascript:void(0);">
+									<img src="../resource/images/template4.jpg">
+								</a>
+								<p class="template-name">模板2</p>
+							</td>
+							<td style="display:none;">
+								<a class="template mobile-template" data-id="模板5" href="javascript:void(0);">
+									<img src="../resource/images/template5.jpg">
+								</a>
+								<p class="template-name">模板5</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../resource/public/jquery.js"></script>
+		<script type="text/javascript" src="../resource/public/json2.js"></script>
+		<script type="text/javascript" src="../resource/public/jquery.zclip/jquery.zclip.js"></script>
+		<script type="text/javascript" src="../resource/public/ajaxfileupload.js"></script>
+		<script type="text/javascript" src="../resource/public/My97DatePicker/WdatePicker.js"></script>
+		<script type="text/javascript" src="../resource/public/jquery.mCustomScrollbar/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" src="../resource/public/jquery.mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+		<script type="text/javascript" src="../resource/public/dialog/mt-dialog.js"></script>
+		<script type="text/javascript" src="../resource/public/spectrum/spectrum.js"></script>
+		<script type="text/javascript" src="../resource/scripts/index.js"></script>
+	</body>
+</html>

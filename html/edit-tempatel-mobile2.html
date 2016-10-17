@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<title> 编辑模板mobile2</title>
+		<link rel="stylesheet" type="text/css" href="../resource/public/jquery.mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+		<link rel="stylesheet" type="text/css" href="../resource/public/spectrum/spectrum.css">
+		<link rel="stylesheet" type="text/css" href="../resource/public/dialog/dialog.css">
+		<link rel="stylesheet" type="text/css" href="../resource/styles/reset.css">
+		<link rel="stylesheet" type="text/css" href="../resource/styles/common.css">
+		<link rel="stylesheet" type="text/css" href="../resource/styles/index.css">
+	</head>
+	</head>
+	<body>
+		<div class="container">
+			<div class="mt-navs">
+				<div class="pub-center-box nav-container">
+					<div class="nav nav1">
+						<a href="#" class="cricle-box">1</a>
+						<p>选择专题模板</p>
+					</div>
+					<div class="nav nav2 current">
+						<a href="#" class="cricle-box">2</a>
+						<p>编辑专题</p>
+					</div>
+				</div>
+			</div>
+			<div class="mt-seminar-header">
+				<div class="pub-center-box seminar-header-inner">
+					<h3 class="">专题编辑区</h3>
+					<!--拾色器会对input类型的进行转化-->
+				</div>
+			</div>
+			<div class="pub-center-box mt-seminar-body clearfix">
+				<div class="mt-asider">
+					<div class="tabs clearfix">
+						<a href="#" class="tab active">全国专题</a>
+						<a href="#" class="tab">本地专题</a>
+					</div>
+					<div class="pannel">
+						<h4>全国专题是针对全国各地区买家开放的专题活动，各地区买家看到的专题内容都是相同的</h4>
+						<p><strong>1</strong>、模板支持专题内容按买家地理位置不同区别显示的功能，即本地买家看到的专题内容和非本地买家看到的不一样（点击“本地专题”进入编辑本地专题页面）</p>
+						<p><strong>2</strong>、本地专题 非必填项，若没有本地营销的特殊需求可不点击</p>
+					</div>
+				</div>
+				<div class="mt-mobile-contents">
+					<div class="phone-container">
+						<div class="mCustomScrollbar phone-inner-box">
+							<div class="edit-bgcolor-box">
+								<a class="btn-edit-BGC"  href="javascript:void(0);">背景设置</a>
+							</div>
+							<!--焦点图-->
+							<div class="focus-box empty">
+								<div class="focus-data">
+									<img src="">
+								</div>
+								<input class="btn-mobile btn-edit-focus" type="button" value="添加一张焦点图">
+							</div>
+							<!--优惠券-->
+							<div class="ticket-box">
+								<div class="tickets clearfix">
+		                        	<div class="ticket-item">
+		                        		<div class="ticket-amount">500</div>
+		                        		<div class="ticket-layer"></div>
+		                        		<div class="ticket-edit-box">
+		                        			<input class="btn-mobile ticket-delete" type="button" value="删除">
+		                        			<input class="btn-mobile ticket-edit" type="button" value="编辑">
+		                        		</div>
+										<input class="primary-btn ticket-add" type="button" value="添加优惠券">
+		                        	</div>
+		                        	<div class="ticket-item empty">
+		                        		<div class="ticket-amount"></div>
+		                        		<div class="ticket-layer"></div>
+		                        		<div class="ticket-edit-box">
+		                        			<input class="btn-mobile ticket-delete" type="button" value="删除">
+		                        			<input class="btn-mobile ticket-edit" type="button" value="编辑">
+		                        		</div>
+										<input class="btn-mobile ticket-add" type="button" value="添加优惠券">
+		                        	</div>
+
+	                        	</div>
+	                        	<a class="btn-add-tickets" href="javascript:void(0);">点击添加优惠券上限</a>
+                        	</div>
+							<!--商品区域-->
+							<div class="goods-contents">
+								<div class="goods-box">
+									<div class="goods-caption empty">
+										<div class="caption-data">
+										</div>
+										<input class="btn-mobile btn-edit-caption" type="button" value="添加通栏副标题（大图）">
+									</div>
+									<div class="goods-items">
+										<div class="goods-item-box style2">
+											<div class="change-style">
+												<strong>样式选择</strong>
+												<label><input type="radio" name="goodsstyle1" checked="checked">每行2个</label>
+												<label><input type="radio" name="goodsstyle1">每行1个</label>
+											</div>
+											<div class="goods-group clearfix">
+												<div class="goods-item">
+													<div class="goods-data">
+														<span class="sale-icon">直降
+															<i></i>
+														</span>
+														<img class="goods-pic" src="../resource/images/single-goods-demo1.jpg">
+														<div class="goods-infomation">
+															<p class="goods-summary">酷派 cool1（标准版/全网通）双1300万后置摄像素</p>
+															<div class="goods-side-title">更完善的售后，尽在。。</div>
+															<div class="goods-price">
+																<span>¥<strong>1988</strong></span>
+																<input type="button" class="btn-buy" value="立即购买">
+															</div>
+															<div class="goods-extre">
+																<span class="timer">还剩<i>XX</i>天<i>XX</i>时<i>XX</i>分<i>XX</i>秒</span>	
+															</div>
+														</div>
+													</div>
+													<div class="goods-layer">
+														
+													</div>
+													<div class="goods-btns">
+														<input class="btn-edit-single btn-edit-top btn-mobile-goods-edit" type="button" value="编辑">
+														<input class="btn-edit-single btn-edit-bottom btn-mobile-goods-delete" type="button" value="删除">
+														<input class="btn-edit-single btn-mobile-goods-add" type="button" value="添加商品">
+													</div>
+												</div>
+												<div class="goods-item empty">
+													<div class="goods-data">
+														
+													</div>
+													<div class="goods-layer">
+														
+													</div>
+													<div class="goods-btns">
+														<input class="btn-edit-single btn-edit-top btn-mobile-goods-edit" type="button" value="编辑">
+														<input class="btn-edit-single btn-edit-bottom btn-mobile-goods-delete" type="button" value="删除">
+														<input class="btn-edit-single btn-mobile-goods-add" type="button" value="添加商品">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="goods-item-box style1">
+											<div class="change-style clearfix">
+												<strong>样式选择</strong>
+												<label><input type="radio" name="goodsstyle2">每行2个</label>
+												<label><input type="radio" name="goodsstyle2" checked="checked">每行1个</label>
+												<input class="btn-btn-mobile btn-mobile-group-delete" type="button" value="删除该组">
+											</div>
+											<div class="goods-group clearfix">
+												<div class="goods-item">
+													<div class="goods-data">
+														<span class="sale-icon">优惠
+															<i></i>
+														</span>
+														<img class="goods-pic" src="../resource/images/single-goods-demo1.jpg">
+														<div class="goods-infomation">
+															<p class="goods-summary">酷派 cool1（标准版/全网通）双1300万后置摄像素</p>
+															<div class="goods-price">
+																<span>¥<strong>1988</strong></span>
+																<input type="button" class="btn-buy" value="立即购买">
+															</div>
+															<div class="goods-extre">
+																<span class="timer">还剩<i>XX</i>天<i>XX</i>时<i>XX</i>分<i>XX</i>秒</span>	
+															</div>
+															<div class="hot">人气：100人</div>
+														</div>
+													</div>
+													<div class="goods-layer">
+														
+													</div>
+													<div class="goods-btns">
+														<input class="btn-edit-single btn-edit-top btn-mobile-goods-edit" type="button" value="编辑">
+														<input class="btn-edit-single btn-edit-bottom btn-mobile-goods-delete" type="button" value="删除">
+														<input class="btn-edit-single btn-mobile-goods-add" type="button" value="添加商品">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<a class="btn-add-goods-group" href="javascript:void(0);">点击添加商品上限</a>
+								</div>
+								<a class="btn-add-goods-box" href="javascript:void(0);">点击添加商品区域</a>
+							</div>                       	
+						</div>
+					</div>
+					</div>
+					<div class="share-container">
+						<h4>
+							<span class="required">*</span>
+							分享设置
+						</h4>
+						<div class="share-image-box">
+							<div class="share-text">分享图：
+							<span class="btn-share">
+								<img class="share-pic hide" src="../resource/images/share-pic-demo.jpg">
+								<input type="file" accept="image/*"/>
+								<a href="javascript:void(0);">点击添加</a>
+							</span>
+							<p class="image-tip">（图片尺寸:30X30   图片大小:30K以下)</p>
+						</div>
+						<div class="share-summry clearfix">
+							<span class="file-text">文案：</span>
+							<textarea placeholder="请输入分享文案最多30个字"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mt-seminar-footer">
+				<div class="pub-center-box seminar-footer-inner">
+					<div class="edit-box">
+						<input class="btn-view" type="button" value="预览">
+						<input class="btn-save" type="button" value="保存">
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../resource/public/jquery.js"></script>
+		<script type="text/javascript" src="../resource/public/json2.js"></script>
+		<script type="text/javascript" src="../resource/public/jquery.zclip/jquery.zclip.js"></script>
+		<script type="text/javascript" src="../resource/public/ajaxfileupload.js"></script>
+		<script type="text/javascript" src="../resource/public/My97DatePicker/WdatePicker.js"></script>
+		<script type="text/javascript" src="../resource/public/jquery.mCustomScrollbar/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" src="../resource/public/jquery.mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+		<script type="text/javascript" src="../resource/public/dialog/mt-dialog.js"></script>
+		<script type="text/javascript" src="../resource/public/spectrum/spectrum.js"></script>
+		<script type="text/javascript" src="../resource/scripts/index.js"></script>
+	</body>
+</html>
